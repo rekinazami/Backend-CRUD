@@ -1,0 +1,25 @@
+GET http://localhost:5000/harian
+
+###
+GET http://localhost:5000/harian/3
+
+###
+POST http://localhost:5000/harian
+Content-Type: application/json
+
+{
+    "judul": "Tugas 3",
+    "catat": "Percobaan"
+}
+
+###
+PATCH  http://localhost:5000/harian/3
+Content-Type: application/json
+
+{
+    "judul": "Tugas 3 Updated",
+    "catat": "Percobaan Update"
+}
+
+###
+DELETE   http://localhost:5000/harian/3
